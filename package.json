@@ -1,0 +1,31 @@
+{
+  "name": "catalog-eshop",
+  "version": "1.0.0",
+  "description": "The home page and the catalog of the website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JJSepulveda/catalog-eshop.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "npm",
+    "javascript",
+    "html",
+    "css",
+    "catalog",
+    "view"
+  ],
+  "author": "yeiyeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JJSepulveda/catalog-eshop/issues"
+  },
+  "homepage": "https://github.com/JJSepulveda/catalog-eshop#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
