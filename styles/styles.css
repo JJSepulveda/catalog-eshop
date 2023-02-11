@@ -10,6 +10,8 @@
     --clr-secondary-text: #757575;
     --clr-white: #FFFFFF;
     --clr-backgroud: #F3F3F3;
+
+    --max-height-card: 364px;
 }
 
 .cart-mobile-button {
@@ -44,4 +46,9 @@
     .mobile-brand {
         display: none !important;
     }
+}
+
+/* Cards */
+.card {
+    max-height: var(--max-height-card);
 }
