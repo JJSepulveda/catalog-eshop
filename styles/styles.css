@@ -52,3 +52,12 @@
 .card {
     max-height: var(--max-height-card);
 }
+
+.item-link {
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    z-index: 1;
+}
