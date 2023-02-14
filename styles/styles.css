@@ -12,6 +12,13 @@
     --clr-backgroud: #F3F3F3;
 
     --max-height-card: 364px;
+    --max-width-card: 224px;
+    --default-margin: 16px;
+    --default-padding: 12px;
+
+    /* swipper Navigation CSS Custom Properties */
+    --swiper-navigation-color: var(--clr-primary);
+    --swiper-navigation-size: 22px;
 }
 
 .cart-mobile-button {
@@ -51,13 +58,31 @@
 /* Cards */
 .card {
     max-height: var(--max-height-card);
+    max-width: var(--max-width-card);
 }
 
 .item-link {
     cursor: pointer;
     height: 100%;
-    position: absolute;
+    /*position: absolute;*/ /* Esto me dio problemas por lo que lo voy a quitar, parece que funciona */
+    /*El problema que me dio es que amontonaba las cartas y solo se veia una linea.*/
     text-decoration: none;
     width: 100%;
     z-index: 1;
+}
+
+/* swuperjs styles */
+.swiper {
+    width: 100%;
+    height: calc(var(--default-margin) + var(--max-height-card) + var(--default-margin));
+}
+
+.swiper-wrapper {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+}
+
+.swiper-button-pre:hover,
+.swiper-button-next:hover {
+    color: var(--clr-primary-dart);
 }
