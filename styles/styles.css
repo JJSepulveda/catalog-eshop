@@ -20,6 +20,7 @@
     /* swipper Navigation CSS Custom Properties */
     --swiper-navigation-color: var(--clr-primary);
     --swiper-navigation-size: 22px;
+    --swiper-theme-color: var(--clr-accent) !important;
 }
 
 .cart-mobile-button {
@@ -82,12 +83,23 @@
     height: calc(var(--default-margin) + var(--max-height-card) + var(--default-margin));
 }
 
+/* voy a quitar esto porque me esta ocasionando problemas en la vista de detalles.
+Busca otra forma de resolver el problema aque habiar resulto con esto para que no rompa
+con el codigo de la vista de detalle.
 .swiper-wrapper {
     padding-left: var(--default-padding);
     padding-right: var(--default-padding);
 }
+*/
 
 .swiper-button-pre:hover,
 .swiper-button-next:hover {
     color: var(--clr-primary-dart);
+}
+
+/* detail-view styles */
+@media only screen and (max-width: 575px) {
+    .desktop-image-list {
+        display: none !important;
+    }
 }

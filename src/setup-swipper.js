@@ -10,6 +10,7 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    freeMode: true,
     // Responsive breakpoints
     breakpoints: {
         // when window width is >= 320px
