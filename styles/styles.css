@@ -10,6 +10,7 @@
     --clr-secondary-text: #757575;
     --clr-white: #FFFFFF;
     --clr-backgroud: #F3F3F3;
+    --clr-gray-hover:#f4f4f4;
 
     --max-height-card: 364px;
     --max-width-card: 224px;
@@ -19,6 +20,7 @@
     /* swipper Navigation CSS Custom Properties */
     --swiper-navigation-color: var(--clr-primary);
     --swiper-navigation-size: 22px;
+    --swiper-theme-color: var(--clr-accent) !important;
 }
 
 .cart-mobile-button {
@@ -56,7 +58,7 @@
 }
 
 /* Cards */
-.card {
+.product-card {
     max-height: var(--max-height-card);
     max-width: var(--max-width-card);
 }
@@ -71,18 +73,38 @@
     z-index: 1;
 }
 
+.card-backgroud-hover:hover {
+    background-color: var(--clr-gray-hover);
+}
+
 /* swuperjs styles */
 .swiper {
     width: 100%;
     height: calc(var(--default-margin) + var(--max-height-card) + var(--default-margin));
 }
 
+/* voy a quitar esto porque me esta ocasionando problemas en la vista de detalles.
+Busca otra forma de resolver el problema aque habiar resulto con esto para que no rompa
+con el codigo de la vista de detalle.
 .swiper-wrapper {
     padding-left: var(--default-padding);
     padding-right: var(--default-padding);
 }
+*/
 
 .swiper-button-pre:hover,
 .swiper-button-next:hover {
     color: var(--clr-primary-dart);
+}
+
+/* detail-view styles */
+@media only screen and (max-width: 575px) {
+    .desktop-image-list {
+        display: none !important;
+    }
+}
+
+/* Links */
+.link-hover:hover > p{
+    color: var(--clr-primary) !important;
 }
