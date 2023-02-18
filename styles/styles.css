@@ -58,7 +58,7 @@
 }
 
 /* Cards */
-.card {
+.product-card {
     max-height: var(--max-height-card);
     max-width: var(--max-width-card);
 }
