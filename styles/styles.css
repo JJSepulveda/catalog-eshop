@@ -91,7 +91,7 @@
     font-size: var(--font-size-small);
 }
 
-/* swuperjs styles */
+/* swiperjs styles */
 .swiper {
     width: 100%;
     height: calc(var(--default-margin) + var(--max-height-card) + var(--default-margin));
