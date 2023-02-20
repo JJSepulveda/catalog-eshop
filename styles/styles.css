@@ -17,6 +17,8 @@
     --default-margin: 16px;
     --default-padding: 12px;
 
+    --font-size-small: 0.875em;
+
     /* swipper Navigation CSS Custom Properties */
     --swiper-navigation-color: var(--clr-primary);
     --swiper-navigation-size: 22px;
@@ -75,6 +77,18 @@
 
 .card-backgroud-hover:hover {
     background-color: var(--clr-gray-hover);
+}
+
+/** Card-styel2 **/
+.cardstyle2 {
+    /* This property is for when the card doesn't have enought text the row wrap to the content and the image
+    It's not showing appropriate (in the index sections with the 3 final publications)
+    */
+    height: 100%;
+}
+
+.small-text {
+    font-size: var(--font-size-small);
 }
 
 /* swuperjs styles */
