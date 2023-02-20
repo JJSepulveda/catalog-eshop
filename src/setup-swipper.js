@@ -1,10 +1,3 @@
-// Instance swipper with the id 0
-var swiper0 = mainSwiperCreate(0)
-hideNavigationsButtons(swiper0)
-
-var swiper1 = mainSwiperCreate(1)
-hideNavigationsButtons(swiper1)
-
 /**
  * 
  */
