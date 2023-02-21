@@ -17,6 +17,8 @@
     --default-margin: 16px;
     --default-padding: 12px;
 
+    --font-size-small: 0.875em;
+
     /* swipper Navigation CSS Custom Properties */
     --swiper-navigation-color: var(--clr-primary);
     --swiper-navigation-size: 22px;
@@ -36,6 +38,8 @@
     width: 45vw;
 }
 
+
+/* cuando la pantalla sea menor que 991px */
 @media only screen and (max-width: 991px) {
     .cart-mobile-button {
         display: block;
@@ -53,6 +57,10 @@
 
 @media only screen and (min-width: 991px) {
     .mobile-brand {
+        display: none !important;
+    }
+    
+    .only-mobile-display{
         display: none !important;
     }
 }
@@ -77,7 +85,19 @@
     background-color: var(--clr-gray-hover);
 }
 
-/* swuperjs styles */
+/** Card-styel2 **/
+.cardstyle2 {
+    /* This property is for when the card doesn't have enought text the row wrap to the content and the image
+    It's not showing appropriate (in the index sections with the 3 final publications)
+    */
+    height: 100%;
+}
+
+.small-text {
+    font-size: var(--font-size-small);
+}
+
+/* swiperjs styles */
 .swiper {
     width: 100%;
     height: calc(var(--default-margin) + var(--max-height-card) + var(--default-margin));
