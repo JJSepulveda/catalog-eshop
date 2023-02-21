@@ -38,6 +38,7 @@
     width: 45vw;
 }
 
+/* cuando la pantalla sea menor que 991px */
 @media only screen and (max-width: 991px) {
     .cart-mobile-button {
         display: block;
