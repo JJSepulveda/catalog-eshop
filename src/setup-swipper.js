@@ -2,7 +2,7 @@
  * 
  */
 function mainSwiperCreate(id = 0) {
-    let swiper = new Swiper(`.mySwiper${id}`, {
+    const swiper = new Swiper(`.mySwiper${id}`, {
         lazyPreloaderClass: `swiper${id}-lazy-preloader`,
         navigation: {
             nextEl: `.swiper${id}-button-next`,
@@ -71,6 +71,7 @@ function hideNavigationsButtons(swipper_instance) {
         } else {
             swipper_instance.navigation.$nextEl.css('display', 'block');
         }
+        
         if (swipper_instance.isBeginning) {
             swipper_instance.navigation.$prevEl.css('display', 'none');
         } else {
